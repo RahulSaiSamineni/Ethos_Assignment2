@@ -1,0 +1,601 @@
+ethosLog path
+1680060521.666250479 [kernel.O] Bootstrapping Ethos...
+1680060521.666255000 [kernel.O] Ethos kernel version: 0.9.11 (Master event loop)
+1680060521.666256169 [kernel.O] Ethos build info:     Jun 14 202212:18:019.3.1 20200408 (Red Hat 9.3.1-2)
+1680060521.666257378 [kernel.O] start_info:     ffffffff804ae000
+1680060521.666258260 [kernel.O]   nr_pages:     102400
+1680060521.666258743 [kernel.O]   shared_inf:   961aa000
+1680060521.666259070 [kernel.O]   pt_base:      ffffffff804b1000
+1680060521.666259412 [kernel.O]   mod_start:    0xffffffff8032d000
+1680060521.666259684 [kernel.O]   mod_len:      757760
+1680060521.666260328 [kernel.O]   flags:        0x0
+1680060521.666260580 [kernel.O]   cmd_line:     sd.port=11112
+1680060521.666261206 [kernel.O]   stack:      ffffffff801c9950-ffffffff801cb950
+1680060521.666262237 [kernel.O] sd.port=11112
+1680060521.666262558 [kernel.O] sd.mac=fe:ff:ff:ff:ff:ff
+1680060521.666262805 [kernel.O] sd.ip=10.0.2.15
+1680060521.666263149 [kernel.O] mlt.queueSize=10
+1680060521.666263557 [kernel.O] ipShadowDaemon=169.254.2.1
+1680060521.666263900 [kernel.O] ipNetwork=169.254.2.2
+1680060521.666265679 [kernel.O]   _text:        ffffffff80000000
+1680060521.666266385 [kernel.O]   _etext:       ffffffff8007c000
+1680060521.666267041 [kernel.O]   _edata:       ffffffff8009a012
+1680060521.666267573 [kernel.O]   stack start:  ffffffff801c9950
+1680060521.666268145 [kernel.O]   _end:         ffffffff80310528
+1680060521.666269796 [kernel.O]   First free, but mapped, pfn:   4b8
+1680060521.666271164 [kernel.O]   Fitst unmapped pfn:            800
+1680060521.666272598 [kernel.O]   Total RAM pages:               19000
+1680060521.666274015 [kernel.O]   Total RAM pages used for PTs:  7
+1680060521.666275474 [kernel.O]   KERN_START                     ffffffff80000000
+1680060521.666276940 [kernel.O]   KERN_END                       ffffffffffffffff
+1680060521.666278518 [kernel.O]   Max number of mapped pfns:     0x7ffff
+1680060521.666279019 [kernel.O]   Mappable pages: 0x4b8-0x19000    unmapped pages: 0x19000-0x19000
+1680060521.666279563 [kernel.O] Mapping memory range 0xffffffff80800000 - 0xffffffff99000000
+1680060521.666281014 [kernel.O] walked initially mapped pages
+1680060521.754100572 [kernel.O] mapped rest of pages
+1680060521.754101698 [kernel.O] MM: archPageTablePopulate completed
+1680060521.754102159 [kernel.O] MM: walk all mapped vm
+1680060521.754132080 [kernel.O] MM: walked
+1680060521.754134156 [kernel.O] MM: Initializing xtype from ffffffff8057c000 to ffffffff99000000
+1680060521.754147577 [kernel.O]   handles ... MM: Umapped pages from 0x19000000-0x19000000
+1680060521.754603916 [kernel.O] physicalInfoInit:  maxMappedPfn = 19000     maxPfn = 19000
+1680060521.755184681 [kernel.O] Buffered console enabled.
+1680060521.755236198 [kernel.O] XEN_GRANT_ frames:
+1680060521.755237345 [kernel.O] 	MFN = 0xb3f91
+1680060521.755237495 [kernel.O] 	MFN = 0xb3e26
+1680060521.755237606 [kernel.O] 	MFN = 0xb3e25
+1680060521.755237713 [kernel.O] 	MFN = 0xb3e24
+1680060521.755237821 [kernel.O] 	MFN = 0xb3e23
+1680060521.755237950 [kernel.O] 	MFN = 0xb3e22
+1680060521.755238070 [kernel.O] 	MFN = 0xb3e21
+1680060521.755238183 [kernel.O] 	MFN = 0xb3e20
+1680060521.755252016 [kernel.O]         Mapping foreign machine frame = 0xb3f91
+1680060521.755254854 [kernel.O]         Mapping foreign machine frame = 0xb3e26
+1680060521.755257484 [kernel.O]         Mapping foreign machine frame = 0xb3e25
+1680060521.755260077 [kernel.O]         Mapping foreign machine frame = 0xb3e24
+1680060521.755262627 [kernel.O]         Mapping foreign machine frame = 0xb3e23
+1680060521.755265055 [kernel.O]         Mapping foreign machine frame = 0xb3e22
+1680060521.755267565 [kernel.O]         Mapping foreign machine frame = 0xb3e21
+1680060521.755270004 [kernel.O]         Mapping foreign machine frame = 0xb3e20
+1680060521.755270432 [kernel.O] xenGrantTable mapped at ffffffff81010000.
+1680060521.755271227 [kernel.O] NR_GRANT_ENTRIES: 4096
+1680060521.755271768 [kernel.O] Initializing events ...
+1680060521.755281129 [kernel.O]  event allocator ...  readyEvents list ...  terminatedKernelEvents list ...  timer list ... done.
+1680060521.755312422 [kernel.O] XenStore channel on 0x804af000, evtchn  0x1
+1680060521.755320452 [kernel.O] ========== Initialize Xen Block Device ===============
+1680060521.756933434 [kernel.O] Block Disk Device: device/vbd/2048
+1680060521.761060305 [kernel.O] Backend ID: 0
+1680060521.762090924 [kernel.O] ====== backend: /local/domain/0/backend/vbd/1/2048
+1680060521.762092511 [kernel.O] Event Channel: 4
+1680060521.762094581 [kernel.O] ---------------Ring initiated.
+1680060521.762095772 [kernel.O] ---------------Ring page shared on grant table.
+1680060521.766912928 [kernel.O] Got InitWait from backend
+1680060521.766912928 [kernel.O] 
+1680060521.766913152 [kernel.O] ===== Start transaction
+1680060521.769442431 [kernel.O] ===== Ring ref
+1680060521.770832801 [kernel.O] ===== write event channel
+1680060521.772392689 [kernel.O] ===== write protocol
+1680060521.773419824 [kernel.O] ===== write state
+1680060521.776352831 [kernel.O] ReadWrite
+1680060521.776352858 [kernel.O] ===== About to watch value
+1680060521.788393723 [kernel.O] Sector-size: 512
+1680060521.789466786 [kernel.O] Sectors: 8192
+1680060521.790977974 [kernel.O] Info: 0
+1680060521.791015950 [kernel.O] ===== FS Init finished
+1680060521.791036018 [kernel.O] Initializing network interfaces ...
+1680060521.875200320 [kernel.O]         backend: /local/domain/0/backend/vif/1/0
+1680060522.569461267 [kernel.O]         backend: /local/domain/0/backend/vif/1/1
+1680060522.999605396 [kernel.O]         NET_TX_RING_SIZE: 256
+1680060522.999779937 [kernel.O]         NET_RX_RING_SIZE: 256
+1680060522.999939127 [kernel.O] done.
+1680060522.999989687 [kernel.O] 
+1680060522.999989687 [kernel.O] ---------------------------
+1680060523.000014051 [kernel.O] eth0:
+1680060523.000037019 [kernel.O] ---------------------------
+1680060523.000059042 [kernel.O] MAC: aa:00:00:00:00:01
+1680060523.000080561 [kernel.O] Backend: /local/domain/0/backend/vif/1/0
+1680060523.000100632 [kernel.O] Event-Channel: 5
+1680060523.000100632 [kernel.O] 
+1680060523.000119585 [kernel.O] 
+1680060523.000119585 [kernel.O] ---------------------------
+1680060523.000137516 [kernel.O] eth1:
+1680060523.000154655 [kernel.O] ---------------------------
+1680060523.000170865 [kernel.O] MAC: aa:00:00:00:00:02
+1680060523.000186732 [kernel.O] Backend: /local/domain/0/backend/vif/1/1
+1680060523.000201715 [kernel.O] Event-Channel: 6
+1680060523.000201715 [kernel.O] 
+1680060523.000531852 [kernel.O] xenNetGetSrcMac: interface=0 ...shadow daemon remote/local ip address 169.254.2.1/10.0.2.15
+1680060523.000545034 [kernel.O] shadow daemon remote/local udp port: 11112
+1680060523.000573361 [kernel.O] tunnelCreateOutgoing: successfully created tunnel
+1680060523.000586270 [kernel.O]    cryptoKeyType = CryptoKeyNone  tunnelId = 0x0
+1680060523.000599720 [kernel.O]    local    mac = aa:00:00:00:00:01    ip = 169.254.2.1    udp = 11112   isOdd = 0
+1680060523.000612809 [kernel.O]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 10.0.2.15    udp = 11112    nonce = 1
+1680060523.000623004 [kernel.O]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1680060523.000632733 [kernel.O]    local.publicKey    = 0000000000000000000000000000000000000000000000000000000000000000
+1680060523.000642042 [kernel.O]    remote.publicKey   = 0000000000000000000000000000000000000000000000000000000000000000
+1680060523.000651099 [kernel.O]    symmetricKey       = 0000000000000000000000000000000000000000000000000000000000000000 
+1680060523.000662376 [kernel.O] shadowdaemonConnectionId = 2
+1680060523.034717997 [kernel.O] received shadowdaemon ping reply, status StatusOk
+1680060523.129630814 [kernel.O] Initializing file system ... fileSystemInit: openDirectoryVector bore
+1680060523.129632716 [kernel.O] fileSystemInit: openDirectoryVector crisp
+1680060523.129634260 [kernel.O] fileSystemInit: openDirectoryVector crispProxyInternal
+1680060523.129635873 [kernel.O] fileSystemInit: openDirectoryVector crypto
+1680060523.129637363 [kernel.O] fileSystemInit: openDirectoryVector debug
+1680060523.129638912 [kernel.O] fileSystemInit: openDirectoryVector directoryService
+1680060523.129640552 [kernel.O] fileSystemInit: openDirectoryVector disStore
+1680060523.129642114 [kernel.O] fileSystemInit: openDirectoryVector hyper
+1680060523.129643986 [kernel.O] fileSystemInit: openDirectoryVector kernel
+1680060523.129645549 [kernel.O] fileSystemInit: openDirectoryVector minimaltdService
+1680060523.129647091 [kernel.O] fileSystemInit: openDirectoryVector msg
+1680060523.129648610 [kernel.O] fileSystemInit: openDirectoryVector myRpc
+1680060523.129650096 [kernel.O] fileSystemInit: openDirectoryVector ping
+1680060523.129651574 [kernel.O] fileSystemInit: openDirectoryVector pipe
+1680060523.129653088 [kernel.O] fileSystemInit: openDirectoryVector processStatus
+1680060523.129654591 [kernel.O] fileSystemInit: openDirectoryVector resh
+1680060523.129656131 [kernel.O] fileSystemInit: openDirectoryVector umreceiveClient
+1680060523.129657627 [kernel.O] fileSystemInit: openDirectoryVector umsendClient
+1680060523.129659106 [kernel.O] fileSystemInit: openDirectoryVector umshimClient
+1680060523.317434331 [kernel.O] netFileInit ... netFileInit done ... done.
+1680060523.318459444 [kernel.O] randomInit done
+1680060523.329064486 [kernel.O] minimaltInit: _typeInit ... certificateInit ...ephemeralKeyPairRead ... ipcInit ...authUserInit ... _insert: authUser  localName=ahmed   hostName=client.ethos   success
+1680060523.333298610 [kernel.O] _insert: authUser  localName=bdrolet   hostName=client.ethos   success
+1680060523.335862145 [kernel.O] _insert: authUser  localName=bennett   hostName=client.ethos   success
+1680060523.336670885 [kernel.O] _insert: authUser  localName=gabriele   hostName=client.ethos   success
+1680060523.337512048 [kernel.O] _insert: authUser  localName=janosch   hostName=client.ethos   success
+1680060523.338320776 [kernel.O] _insert: authUser  localName=jlong   hostName=client.ethos   success
+1680060523.339161771 [kernel.O] _insert: authUser  localName=me   hostName=client.ethos   success
+1680060523.340001965 [kernel.O] _insert: authUser  localName=mike   hostName=client.ethos   success
+1680060523.340857537 [kernel.O] _insert: authUser  localName=nobody   hostName=client.ethos   success
+1680060523.341695002 [kernel.O] _insert: authUser  localName=pat   hostName=client.ethos   success
+1680060523.342526559 [kernel.O] _insert: authUser  localName=pollyPlaninsek   hostName=client.ethos   success
+1680060523.343320558 [kernel.O] _insert: authUser  localName=solworth   hostName=client.ethos   success
+1680060523.344093629 [kernel.O] _insert: authUser  localName=thanmayi   hostName=client.ethos   success
+1680060523.344942631 [kernel.O] _insert: authUser  localName=theodorePlaninsek   hostName=client.ethos   success
+1680060523.346400346 [kernel.O] _insert: authUser  localName=wfei   hostName=client.ethos   success
+1680060523.347223954 [kernel.O] _insert: authUser  localName=xuzhang   hostName=client.ethos   success
+1680060523.347751159 [kernel.O] _insert: authUser  localName=yl   hostName=client.ethos   success
+1680060523.348054986 [kernel.O] directoryCacheInit ... userCryptoInit ... done
+1680060523.348072280 [kernel.O] netWorkInit:   initNetworkMinimalt...xenNetGetSrcMac: interface=1 ...done
+1680060523.348957618 [kernel.O] efsInit done
+1680060523.348959074 [kernel.O] before initializing first process
+1680060523.350608288 [kernel.O] archProcessInitStart: right before process init
+1680060523.553875206 [kernel.O] exit()
+1680060545.346118106 [kernel.O] opening envelope right before tunnel create
+1680060545.346178849 [kernel.O] tunnelCreateIncoming: successfully created tunnel
+1680060545.346184871 [kernel.O]    cryptoKeyType = CryptoKeyPermanent  tunnelId = 0x3f477243dcaa50c5
+1680060545.346188788 [kernel.O]    local    mac = aa:00:00:00:00:02    ip = 169.254.2.2    udp = 11110   isOdd = 1
+1680060545.346192434 [kernel.O]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 10.0.2.15    udp = 11120    nonce = 0
+1680060545.346193734 [kernel.O]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1680060545.346195015 [kernel.O]    local.publicKey    = 6ab25de57943bc14f8f545bc23398cb7a39a25733269e722dab298c03f30c710
+1680060545.346196322 [kernel.O]    remote.publicKey   = 5d34f6da381720cb68ec8b0ec114e7446b666e5a9f722cf535788a7c9fd50520
+1680060545.346197709 [kernel.O]    symmetricKey       = 6dd9505f44acc3f1b9c832fdd6c63b91439eac30b1473950cfd0eb400d838f20 
+1680060545.346214751 [kernel.O] rpcMinimaltDirectoryServiceLookup:
+1680060545.348772694 [kernel.O] rpcDirectoryCacheInitializedInterlockReply: beginning  eventId=17139007101988876933  status=StatusOk
+1680060545.348775302 [kernel.O] rpcDirectoryCacheInitializedInterlockReply: event woken up
+1680060545.348826300 [kernel.O] netFileReadEphemeralHostCertificate: host=client.ethos   StatusOk
+1680060545.352465309 [kernel.O] opening envelope right before tunnel create
+1680060545.352518985 [kernel.O] tunnelCreateIncoming: successfully created tunnel
+1680060545.352523377 [kernel.O]    cryptoKeyType = CryptoKeyEphemeral  tunnelId = 0x347bcfe7df0a0eba
+1680060545.352527176 [kernel.O]    local    mac = aa:00:00:00:00:02    ip = 169.254.2.2    udp = 11111   isOdd = 1
+1680060545.352530809 [kernel.O]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 10.0.2.15    udp = 11121    nonce = 0
+1680060545.352532041 [kernel.O]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1680060545.352533352 [kernel.O]    local.publicKey    = 4cf0d8ce81cc3100dd1e598d53db389e5ff9a6deb86f34a4b19222fa3d37c030
+1680060545.352534604 [kernel.O]    remote.publicKey   = 2bd541e03c2a22b29d3770deab491ac702f8a96b0d041e9074219d506561c00a
+1680060545.352535892 [kernel.O]    symmetricKey       = 449e22b0847e16091dd3a2436fd507faca73c7aebc92471a0d6d73c6e79a2e4e 
+1680060545.352581390 [kernel.O] rpcMinimaltConnectionCreateAuthenticated: enter  connectionId=4  path=/services/directoryService/directoryService
+1680060545.352588495 [kernel.O] _connectionCreate: advertiseFromPath succeeded
+1680060545.352590003 [kernel.O] _connectionCreate: connection created
+1680060545.352595377 [kernel.O] netFileReadPermission: servicePath=/services/directoryService
+1680060545.352723849 [kernel.O] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1680060545.352725257 [kernel.O] netFileReadPermission: label=directoryService
+1680060545.353985318 [kernel.O] netFileReadPermission: mixinReadTyped  status=StatusOk
+1680060545.353991088 [kernel.O] netFileReadPermission: permission-- outgoingUser->group=*
+1680060545.353996789 [kernel.O] netFileReadPermission: permission-- incomingUser->group=universal
+1680060545.354494931 [kernel.O] netFileReadUserCertificateByGroup: group=universal  userName=nobody@u.client.minimaltd.ethos  StatusNotADirectory
+1680060545.404076963 [kernel.O] rpcDirectoryCacheGetUserReply: beginning  eventId=16097080435422106999  status=StatusOk
+1680060545.404123533 [kernel.O] netFileReadUserCertificateByGroup: group=universal  userName=nobody@u.client.minimaltd.ethos  StatusOk
+1680060545.404125514 [kernel.O] directoryCacheUserLookup: returns nobody@u.client.minimaltd.ethos value
+1680060545.404215622 [kernel.O] _validateUser: validation  remoteName=nobody@u.client.minimaltd.ethos  localName=nobody,hostName=client.ethos  status = StatusOk
+1680060545.404227108 [kernel.O] _eventConnectionCreateAuthenticated: _validateUser nobody@u.client.ethos  StatusOk
+1680060545.404229725 [kernel.O] _eventConnectionCreateAuthenticated: next check /services/directoryService/directoryService
+1680060545.404230737 [kernel.O] _incomingConnection: at top
+1680060545.404233655 [kernel.O] _incomingConnection: status = StatusOk
+1680060545.404244348 [kernel.O] _eventConnectionCreateAuthenticated: rpcReply sent StatusOk
+1680060545.414411270 [kernel.O] rpcMinimaltIpcWrite:
+1680060545.414464754 [kernel.O] rpcMinimaltConnectionCreateAuthenticated: enter  connectionId=6  path=/services/resh/resh
+1680060545.414473154 [kernel.O] _connectionCreate: advertiseFromPath succeeded
+1680060545.414474808 [kernel.O] _connectionCreate: connection created
+1680060545.414480923 [kernel.O] netFileReadPermission: servicePath=/services/resh
+1680060545.414786309 [kernel.O] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1680060545.414787527 [kernel.O] netFileReadPermission: label=openServer
+1680060545.415525840 [kernel.O] netFileReadPermission: mixinReadTyped  status=StatusOk
+1680060545.415528883 [kernel.O] netFileReadPermission: permission-- outgoingUser->group=*
+1680060545.415531760 [kernel.O] netFileReadPermission: permission-- incomingUser->group=allUsers
+1680060545.415741965 [kernel.O] netFileReadUserCertificateByGroup: group=allUsers  userName=me@u.client.minimaltd.ethos  StatusNotADirectory
+1680060545.429122575 [kernel.O] rpcMinimaltIpcWriteReply:
+1680060545.482811211 [kernel.O] rpcDirectoryCacheGetUserReply: beginning  eventId=48945923806434435  status=StatusOk
+1680060545.482811344 [kernel.O] netFileReadUserCertificateByGroup: group=allUsers  userName=me@u.client.minimaltd.ethos  StatusOk
+1680060545.482811370 [kernel.O] directoryCacheUserLookup: returns me@u.client.minimaltd.ethos value
+1680060545.482835513 [kernel.O] _validateUser: validation  remoteName=me@u.client.minimaltd.ethos  localName=me,hostName=client.ethos  status = StatusOk
+1680060545.482839214 [kernel.O] _eventConnectionCreateAuthenticated: _validateUser me@u.client.ethos  StatusOk
+1680060545.482841401 [kernel.O] _eventConnectionCreateAuthenticated: next check /services/resh/resh
+1680060545.482842132 [kernel.O] _incomingConnection: at top
+1680060545.482844957 [kernel.O] _incomingConnection: status = StatusOk
+1680060545.482854752 [kernel.O] _eventConnectionCreateAuthenticated: rpcReply sent StatusOk
+1680060546.385935992 [kernel.O] rpcMinimaltIpcWriteReply:
+1680060552.087778174 [kernel.O] rpcMinimaltIpcWrite:
+1680060552.291956218 [kernel.O] rpcMinimaltIpcWriteReply:
+1680060562.127572628 [kernel.O] rpcMinimaltIpcWrite:
+1680060562.138252443 [kernel.O] rpcMinimaltIpcWriteReply:
+1680060622.191063588 [kernel.O] rpcMinimaltIpcWrite:
+1680060622.209740306 [kernel.O] rpcMinimaltIpcWriteReply:
+1680060523.853070685 [cryptoService.O] starts ...
+1680060523.849892881 [directoryCache.O] starts ...
+1680060523.856998335 [directoryCache.O] initialize: HostName 'client.ethos'    DirectoryServiceHostName 'client.ethos'   HostIpPort '169.254.2.2:11111'
+1680060523.864831830 [directoryCache.O] Ephemeral host certificate initialized ...
+1680060523.866335549 [directoryCache.O] EphemeralHostCertificate
+1680060523.869060824 [directoryCache.O]    Size: 394   Version: 0   ValidFrom: [1680060523.859992000]   ValidTo: [1711596523.859992000]
+1680060523.870607140 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060523.871549038 [directoryCache.O]    SignaturePublicKey:       33e578fa...d7344250
+1680060523.872961568 [directoryCache.O]    Signature:                8698fe29...890aa446
+1680060523.876597533 [directoryCache.O]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1680060523.878833189 [directoryCache.O]    LongTermEncryptingPublicKey:   6ab25de5...3f30c710
+1680060523.879931329 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060560.574850000]  PublicKey=4cf0d8ce...3d37c030
+1680060523.881770936 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060620.574850000]  PublicKey=7fafc4d6...7868777e
+1680060524.225719726 [directoryCache.O] Starting directoryService... path= /system/programs/directoryService
+1680060524.331855583 [directoryCache.O] asyncLoop: connected to kernel/directoryCache
+1680060524.335543475 [directoryCache.O] permissions for directoryService
+1680060524.336409865 [directoryCache.O]          [C]              ExecutableLabel: *    Group: *
+1680060524.337740730 [directoryCache.O]          [R]              ExecutableLabel: *    Group: *
+1680060524.340117140 [directoryCache.O]          [W]              ExecutableLabel: *    Group: *
+1680060524.340669145 [directoryCache.O]          [X]              ExecutableLabel: *    Group: *
+1680060524.341843153 [directoryCache.O]          [DC]             ExecutableLabel: *    Group: *
+1680060524.343056407 [directoryCache.O]          [DR]             ExecutableLabel: *    Group: *
+1680060524.344991080 [directoryCache.O]          [OutgoingHost]   ExecutableLabel: *    Group: allHosts
+1680060524.347107101 [directoryCache.O]          [OutgoingUser]   ExecutableLabel: *    Group: *
+1680060524.348309968 [directoryCache.O]          [IncomingUser]   ExecutableLabel: *    Group: universal
+1680060524.361744158 [directoryCache.O] asyncLoop: created directoryService group
+1680060524.363386834 [directoryCache.O] asyncLoop: DirectoryServiceHostName=client.ethos  directoryServiceFd=105
+1680060524.364827533 [directoryCache.O] asyncLoop: just before event loop
+1680060545.347305881 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060545.347525027 [directoryCache.O] DirectoryCacheInitializedInterlock:
+1680060545.354590198 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060545.355039410 [directoryCache.O] UserCertificate
+1680060545.356007102 [directoryCache.O]    Size: 362   Version: 0   ValidFrom: [1680060502.959624000]   ValidTo: [1711596502.959624000]
+1680060545.357182111 [directoryCache.O]    TypeHash:                 67c95180...271cc122
+1680060545.358421470 [directoryCache.O]    SignaturePublicKey:       797518f4...035898f4
+1680060545.360664876 [directoryCache.O]    Signature:                6fefa16d...907b3fd6
+1680060545.361678426 [directoryCache.O]    Domain:                   client.minimaltd.ethos
+1680060545.362891790 [directoryCache.O]    Name:                     nobody
+1680060545.364056200 [directoryCache.O]    AliasName:                 nobody
+1680060545.365812841 [directoryCache.O]    SigningPublicKey:         79629fc5...1451672d
+1680060545.371496535 [directoryCache.O]    EncryptingPublicKey:      8f22d6de...96cd8e3b
+1680060545.373266063 [directoryCache.O] DirectoryCacheGetUser: userName=nobody  groupName=universal
+1680060545.375302160 [directoryCache.O] group: groupName=universal  isHostGroup=false
+1680060545.390252374 [directoryCache.O] initGroup: Adding key for  client.ethos
+1680060545.391214826 [directoryCache.O] initGroup: Adding key for  client.minimaltd.ethos
+1680060545.394043193 [directoryCache.O] userGroupFetch: ugcName=universal@g.client.ethos
+1680060545.395196177 [directoryCache.O] userGroupCertificateProcess: ugcName=universal@g.client.ethos
+1680060545.396745449 [directoryCache.O] userGroupCertificateProcess: add wildcard member  *
+1680060545.397762121 [directoryCache.O] userGroupFetch of universal@g.client.ethos is done
+1680060545.398962785 [directoryCache.O] userCertificateProcess: nobody@u.client.minimaltd.ethos
+1680060545.401644156 [directoryCache.O] userCertificateProcess: done
+1680060545.403090436 [directoryCache.O] DirectoryCacheGetUser: userName=nobody@u.client.minimaltd.ethos  StatusOk
+1680060545.416054252 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060545.417985056 [directoryCache.O] UserCertificate
+1680060545.420310447 [directoryCache.O]    Size: 354   Version: 0   ValidFrom: [1680060502.966725000]   ValidTo: [1711596502.966725000]
+1680060545.421369667 [directoryCache.O]    TypeHash:                 67c95180...271cc122
+1680060545.422627997 [directoryCache.O]    SignaturePublicKey:       797518f4...035898f4
+1680060545.424755326 [directoryCache.O]    Signature:                470a5af9...931a5425
+1680060545.427074774 [directoryCache.O]    Domain:                   client.minimaltd.ethos
+1680060545.429453253 [directoryCache.O]    Name:                     me
+1680060545.429728509 [directoryCache.O]    AliasName:                 me
+1680060545.431016970 [directoryCache.O]    SigningPublicKey:         3c539086...70cf05e3
+1680060545.432150327 [directoryCache.O]    EncryptingPublicKey:      7d88d568...4a82e217
+1680060545.433734104 [directoryCache.O] DirectoryCacheGetUser: userName=me  groupName=allUsers
+1680060545.434392278 [directoryCache.O] group: groupName=allUsers  isHostGroup=false
+1680060545.447062083 [directoryCache.O] initGroup: Adding key for  client.ethos
+1680060545.448261257 [directoryCache.O] initGroup: Adding key for  client.minimaltd.ethos
+1680060545.449415807 [directoryCache.O] userGroupFetch: ugcName=allUsers@g.client.ethos
+1680060545.451739553 [directoryCache.O] userGroupCertificateProcess: ugcName=allUsers@g.client.ethos
+1680060545.452649533 [directoryCache.O] userGroupCertificateProcess: processing member ahmed
+1680060545.454709941 [directoryCache.O] userGroupCertificateProcess: processing member bdrolet
+1680060545.455885881 [directoryCache.O] userGroupCertificateProcess: processing member bennett
+1680060545.457312992 [directoryCache.O] userGroupCertificateProcess: processing member gabriele
+1680060545.458287652 [directoryCache.O] userGroupCertificateProcess: processing member janosch
+1680060545.459519130 [directoryCache.O] userGroupCertificateProcess: processing member jlong
+1680060545.460750180 [directoryCache.O] userGroupCertificateProcess: processing member me
+1680060545.461961010 [directoryCache.O] userGroupCertificateProcess: processing member mike
+1680060545.463345418 [directoryCache.O] userGroupCertificateProcess: processing member nobody
+1680060545.464339468 [directoryCache.O] userGroupCertificateProcess: processing member pat
+1680060545.465579864 [directoryCache.O] userGroupCertificateProcess: processing member pollyPlaninsek
+1680060545.467755620 [directoryCache.O] userGroupCertificateProcess: processing member solworth
+1680060545.469172836 [directoryCache.O] userGroupCertificateProcess: processing member thanmayi
+1680060545.470194112 [directoryCache.O] userGroupCertificateProcess: processing member theodorePlaninsek
+1680060545.471356936 [directoryCache.O] userGroupCertificateProcess: processing member wfei
+1680060545.472583128 [directoryCache.O] userGroupCertificateProcess: processing member xuzhang
+1680060545.473789721 [directoryCache.O] userGroupCertificateProcess: processing member yl
+1680060545.475308511 [directoryCache.O] userGroupFetch of allUsers@g.client.ethos is done
+1680060545.476686244 [directoryCache.O] userCertificateProcess: me@u.client.minimaltd.ethos
+1680060545.479506211 [directoryCache.O] userCertificateProcess: done
+1680060545.481475764 [directoryCache.O] DirectoryCacheGetUser: userName=me@u.client.minimaltd.ethos  StatusOk
+1680060560.575741153 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060560.577822139 [directoryCache.O] Signing and writing my ephemeral host certificate client.ethos 169.254.2.2:11111
+1680060560.582666140 [directoryCache.O] EphemeralHostCertificate
+1680060560.583890318 [directoryCache.O]    Size: 394   Version: 0   ValidFrom: [1680060560.579718000]   ValidTo: [1711596560.579718000]
+1680060560.585113673 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060560.586555355 [directoryCache.O]    SignaturePublicKey:       33e578fa...d7344250
+1680060560.588561209 [directoryCache.O]    Signature:                0fb6b8da...b0fc7767
+1680060560.592278065 [directoryCache.O]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1680060560.593588020 [directoryCache.O]    LongTermEncryptingPublicKey:   6ab25de5...3f30c710
+1680060560.594674119 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060620.574850000]  PublicKey=7fafc4d6...7868777e
+1680060560.595912094 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060680.574850000]  PublicKey=24665d03...689cc72c
+1680060620.575412899 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060620.578326158 [directoryCache.O] Signing and writing my ephemeral host certificate client.ethos 169.254.2.2:11111
+1680060620.582669318 [directoryCache.O] EphemeralHostCertificate
+1680060620.583672357 [directoryCache.O]    Size: 394   Version: 0   ValidFrom: [1680060620.579600000]   ValidTo: [1711596620.579600000]
+1680060620.585694757 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060620.587119803 [directoryCache.O]    SignaturePublicKey:       33e578fa...d7344250
+1680060620.588868076 [directoryCache.O]    Signature:                06534971...27762626
+1680060620.591291544 [directoryCache.O]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1680060620.592467108 [directoryCache.O]    LongTermEncryptingPublicKey:   6ab25de5...3f30c710
+1680060620.593653731 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060680.574850000]  PublicKey=24665d03...689cc72c
+1680060620.594911874 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060740.574850000]  PublicKey=bfce6a09...e90d2b14
+1680060524.309701229 [directoryService.O] starts ...
+1680060524.315667469 [directoryService.O] Advertise succeeded
+1680060524.316288455 [directoryService.O] ImportAsync succeeded
+1680060524.363568672 [directoryService.O] woke up from block, len(completed)=1
+1680060545.404566279 [directoryService.O] woke up from block, len(completed)=1
+1680060545.416523053 [directoryService.O] woke up from block, len(completed)=1
+1680060545.418834842 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Updating ehc for host client.minimaltd.ethos
+1680060545.421425920 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/client.minimaltd.ethos: StatusOk
+1680060545.425562571 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/10.0.2.15:11121: StatusOk
+1680060562.128233642 [directoryService.O] woke up from block, len(completed)=1
+1680060562.128779007 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Updating ehc for host client.minimaltd.ethos
+1680060562.132413983 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/client.minimaltd.ethos: StatusOk
+1680060562.135226568 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/10.0.2.15:11121: StatusOk
+1680060622.192319532 [directoryService.O] woke up from block, len(completed)=1
+1680060622.194220073 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Updating ehc for host client.minimaltd.ethos
+1680060622.201103605 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/client.minimaltd.ethos: StatusOk
+1680060622.205753652 [directoryService.O] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/10.0.2.15:11121: StatusOk
+1680060545.706925311 [el.O] elVersion:  2.0
+1680060552.280324255 [el.O] 10: startTime: 1680060552159945895 endTime: 1680060552279401251
+1680060552.286569880 [el.O] 10: Total Instructions executed: 2 and time: 119 ms
+1680060523.382649931 [init.O] Hello, world!
+1680060523.389269661 [init.O] Opening /etc/init/services/
+1680060523.396410078 [init.O] Reading /etc/init/services/bankingserver, pid = 2
+1680060523.470210810 [init.O] Running /programs/bankingserver
+1680060523.475292130 [init.O] Reading /etc/init/services/cryptoService, pid = 4
+1680060523.478333175 [init.O] Reading /etc/init/services/directoryCache, pid = 5
+1680060523.484973717 [init.O] Reading /etc/init/services/pingService, pid = 6
+1680060523.485823555 [init.O] Running /system/programs/cryptoService
+1680060523.491052674 [init.O] Running /system/programs/directoryCache
+1680060523.491889745 [init.O] Reading /etc/init/services/reshService, pid = 7
+1680060523.547454821 [init.O] Running /system/programs/pingService
+1680060523.554108439 [init.O] Running /system/programs/reshService
+1680060523.849420846 [reshService.O] before import
+1680060545.490026276 [reshService.O] import 23
+1680060545.586282178 [reshService.O] after fdSend
+1680060545.598172179 [reshVP.O] redirect to  9 
+1680060545.598172179 [reshVP.O] 
+1680060545.609111763 [reshVP.O] exec /programs/el
+1680060545.609111763 [reshVP.O] 
+1680060552.234962227 [bankingclient.O] The current loggedin user name is:  me
+1680060552.241723303 [bankingclient.O] Balance call
+1680060552.249224815 [bankingclient.O] Total Balance available in your account is: 2700.000000
+1680060552.250760460 [bankingclient.O] Deposit call
+1680060552.258936567 [bankingclient.O] Amount Deposited to your account is: 500.000000
+1680060552.260833035 [bankingclient.O] Withdraw call
+1680060552.268540004 [bankingclient.O] Amount Withdrawn from your account is: 200.000000
+1680060552.269428478 [bankingclient.O] Transfer call
+1680060552.275746448 [bankingclient.O] The total amountTransfered is: 200
+1680060552.277898497 [bankingclient.O] bankingclient: done
+1680060552.242659113 [bankingserver.O] new connection accepted
+1680060552.248030456 [bankingserver.O] The total balance available in your account is: 2700
+1680060552.253498447 [bankingserver.O] new connection accepted
+1680060552.254762319 [bankingserver.O] Amount Deposited Successfully:  500
+1680060552.256567100 [bankingserver.O] Total balance available after deposit:  3200
+1680060552.262391114 [bankingserver.O] new connection accepted
+1680060552.263460335 [bankingserver.O] The amount withdrawn from your account is:  200
+1680060552.265464314 [bankingserver.O] The total balance available after withdrawn is:  3000
+1680060552.270984679 [bankingserver.O] new connection accepted
+1680060552.272603943 [bankingserver.O] The total amount transferred is: 200
+1680060552.274210183 [bankingserver.O] The total amount available after amount sent is:  2800
+1680060543.196311000 [minimaltd.O] netFileInit ... mixinSubFiles: path=/types/all
+1680060543.253597000 [minimaltd.O] netFileInit done ... minimaltInit: _typeInit ... certificateInit ...ephemeralKeyPairRead ... advertiseInit
+1680060543.254802000 [minimaltd.O] ipcInit ...authUserInit ... mixinSubFiles: path=/auth/sayi/u
+1680060543.254935000 [minimaltd.O] _insert: authUser  localName=solworth   hostName=client.minimaltd.ethos   success
+1680060543.255024000 [minimaltd.O] _insert: authUser  localName=theodorePlaninsek   hostName=client.minimaltd.ethos   success
+1680060543.255091000 [minimaltd.O] _insert: authUser  localName=gabriele   hostName=client.minimaltd.ethos   success
+1680060543.255154000 [minimaltd.O] _insert: authUser  localName=root   hostName=client.minimaltd.ethos   success
+1680060543.255218000 [minimaltd.O] _insert: authUser  localName=pollyPlaninsek   hostName=client.minimaltd.ethos   success
+1680060543.255283000 [minimaltd.O] _insert: authUser  localName=yl   hostName=client.minimaltd.ethos   success
+1680060543.255351000 [minimaltd.O] _insert: authUser  localName=pat   hostName=client.minimaltd.ethos   success
+1680060543.255416000 [minimaltd.O] _insert: authUser  localName=bennett   hostName=client.minimaltd.ethos   success
+1680060543.255485000 [minimaltd.O] _insert: authUser  localName=thanmayi   hostName=client.minimaltd.ethos   success
+1680060543.255560000 [minimaltd.O] _insert: authUser  localName=jlong   hostName=client.minimaltd.ethos   success
+1680060543.255642000 [minimaltd.O] _insert: authUser  localName=nobody   hostName=client.minimaltd.ethos   success
+1680060543.255705000 [minimaltd.O] _insert: authUser  localName=xuzhang   hostName=client.minimaltd.ethos   success
+1680060543.255777000 [minimaltd.O] _insert: authUser  localName=me   hostName=client.minimaltd.ethos   success
+1680060543.255841000 [minimaltd.O] _insert: authUser  localName=bdrolet   hostName=client.minimaltd.ethos   success
+1680060543.255914000 [minimaltd.O] _insert: authUser  localName=ahmed   hostName=client.minimaltd.ethos   success
+1680060543.255980000 [minimaltd.O] _insert: authUser  localName=janosch   hostName=client.minimaltd.ethos   success
+1680060543.256047000 [minimaltd.O] _insert: authUser  localName=mike   hostName=client.minimaltd.ethos   success
+1680060543.256112000 [minimaltd.O] _insert: authUser  localName=wfei   hostName=client.minimaltd.ethos   success
+1680060543.256154000 [minimaltd.O] advertiseAdvertise: /services/kernel/directoryCache/directoryCache   0
+1680060543.256196000 [minimaltd.O] _insertPathToRdId: path=/services/kernel/directoryCache/directoryCache   RdId=1  done
+1680060543.256247000 [minimaltd.O] _getTypeHash: path=/services/kernel/directoryCache/directoryCache  StatusOk
+1680060543.256285000 [minimaltd.O] advertiseAdvertise: done  StatusOk
+1680060543.256330000 [minimaltd.O] directoryCacheInit: done StatusOk
+1680060543.256409000 [minimaltd.O] directoryCacheInit ... userCryptoInit ... done
+1680060543.261162000 [minimaltd.O] netInterfaceBind T1: local ip/port 10.0.2.15/11120
+1680060543.261303000 [minimaltd.O] netInterfaceBind T2: local ip/port 10.0.2.15/11121
+1680060543.261598000 [minimaltd.O] unixSocketAdd: Added   fd=9  type=FdInfoDirectoryCache  path=/services/kernel/directoryCache/directoryCache
+1680060543.261781000 [minimaltd.O] unixSocketAdd: Added   fd=10  type=FdInfoMinimaltdListen  path=/services/minimaltdService/minimaltdService
+1680060544.190490000 [minimaltd.O] unixSocketAdd: Added   fd=11  type=FdInfoMinimaltd   path=minimaltdService
+1680060544.190622000 [minimaltd.O] _getAuthUserByFd:  uid=1000
+1680060544.190698000 [minimaltd.O] establishIpc: /services/resh/resh
+1680060544.190757000 [minimaltd.O] _getTypeHash: path=/services/resh/resh  StatusOk
+1680060544.190802000 [minimaltd.O] remoteEventIpc:  /services/resh/resh   client.ethos   me,client.minimaltd.ethos
+1680060544.190848000 [minimaltd.O] netFileReadPermission: servicePath=/services/resh
+1680060544.190912000 [minimaltd.O] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1680060544.190950000 [minimaltd.O] netFileReadPermission: label=openServer
+1680060544.191010000 [minimaltd.O] netFileReadPermission: mixinReadTyped  status=StatusOk
+1680060544.191048000 [minimaltd.O] netFileReadPermission: permission-- outgoingUser->group=*
+1680060544.191096000 [minimaltd.O] netFileReadPermission: permission-- incomingUser->group=allUsers
+1680060544.191139000 [minimaltd.O] remoteEventIpc: pathName=/services/resh/resh  group=allHosts
+1680060544.191171000 [minimaltd.O] remoteEventIpc: before tunnelFindOrEstablish
+1680060544.191214000 [minimaltd.O] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusNotAFile
+1680060545.345602000 [minimaltd.O] unixSocketAdd: Added   fd=12  type=FdInfoIPCEndpoint  path=directoryCache
+1680060545.348547000 [minimaltd.O] unixSocketAdd: Added   fd=13  type=FdInfoMinimaltd   path=minimaltdService
+1680060545.349069000 [minimaltd.O] _getAuthUserByFd:  uid=65534
+1680060545.349122000 [minimaltd.O] establishIpc: /services/directoryService/directoryService
+1680060545.349170000 [minimaltd.O] _getTypeHash: path=/services/directoryService/directoryService  StatusOk
+1680060545.349212000 [minimaltd.O] remoteEventIpc:  /services/directoryService/directoryService   client.ethos   nobody,client.minimaltd.ethos
+1680060545.349251000 [minimaltd.O] netFileReadPermission: servicePath=/services/directoryService
+1680060545.349296000 [minimaltd.O] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1680060545.349327000 [minimaltd.O] netFileReadPermission: label=directoryService
+1680060545.349374000 [minimaltd.O] netFileReadPermission: mixinReadTyped  status=StatusOk
+1680060545.349407000 [minimaltd.O] netFileReadPermission: permission-- outgoingUser->group=*
+1680060545.349442000 [minimaltd.O] netFileReadPermission: permission-- incomingUser->group=universal
+1680060545.349479000 [minimaltd.O] remoteEventIpc: pathName=/services/directoryService/directoryService  group=allHosts
+1680060545.349512000 [minimaltd.O] remoteEventIpc: before directoryServiceTunnelFindOrEstablish
+1680060545.349564000 [minimaltd.O] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusNotAFile
+1680060545.349772000 [minimaltd.O] tunnelCreateOutgoing: successfully created tunnel
+1680060545.349817000 [minimaltd.O]    cryptoKeyType = CryptoKeyPermanent  tunnelId = 0x3f477243dcaa50c5
+1680060545.349860000 [minimaltd.O]    local    mac = 00:00:00:00:00:00    ip = 10.0.2.15    udp = 11120   isOdd = 0
+1680060545.349900000 [minimaltd.O]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 169.254.2.2    udp = 11110    nonce = 1
+1680060545.349936000 [minimaltd.O]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1680060545.349973000 [minimaltd.O]    local.publicKey    = 5d34f6da381720cb68ec8b0ec114e7446b666e5a9f722cf535788a7c9fd50520
+1680060545.350009000 [minimaltd.O]    remote.publicKey   = 6ab25de57943bc14f8f545bc23398cb7a39a25733269e722dab298c03f30c710
+1680060545.350045000 [minimaltd.O]    symmetricKey       = 6dd9505f44acc3f1b9c832fdd6c63b91439eac30b1473950cfd0eb400d838f20 
+1680060545.354992000 [minimaltd.O] rpcMinimaltDirectoryServiceLookupReply:
+1680060545.355085000 [minimaltd.O] netFileWritephemeralHostCertificate: host=client.ethos   StatusOk
+1680060545.355104000 [minimaltd.O] tunnelCreateOutgoing: tunnel found
+1680060545.355129000 [minimaltd.O] tunnelCreateOutgoing: successfully created tunnel
+1680060545.355211000 [minimaltd.O]    cryptoKeyType = CryptoKeyEphemeral  tunnelId = 0x347bcfe7df0a0eba
+1680060545.355324000 [minimaltd.O]    local    mac = 00:00:00:00:00:00    ip = 10.0.2.15    udp = 11121   isOdd = 0
+1680060545.355593000 [minimaltd.O]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 169.254.2.2    udp = 11111    nonce = 1
+1680060545.356043000 [minimaltd.O]    idPublicKey        = 6ab25de57943bc14f8f545bc23398cb7a39a25733269e722dab298c03f30c710
+1680060545.356095000 [minimaltd.O]    local.publicKey    = 2bd541e03c2a22b29d3770deab491ac702f8a96b0d041e9074219d506561c00a
+1680060545.356145000 [minimaltd.O]    remote.publicKey   = 4cf0d8ce81cc3100dd1e598d53db389e5ff9a6deb86f34a4b19222fa3d37c030
+1680060545.356194000 [minimaltd.O]    symmetricKey       = 449e22b0847e16091dd3a2436fd507faca73c7aebc92471a0d6d73c6e79a2e4e 
+1680060545.356299000 [minimaltd.O] remoteEventIpc: before _createConnection StatusOk
+1680060545.356344000 [minimaltd.O] _createConnection: /services/directoryService/directoryService  nobody@u.client.minimaltd.ethos
+1680060545.356430000 [minimaltd.O] minimaltConnectionCreateAuthenticatedCall
+1680060545.356494000 [minimaltd.O] _generateAndSendUserAuthenticator! before block 12345194651659380005
+1680060545.409704000 [minimaltd.O] rpcMinimaltConnectionCreateReply! 12345194651659380005  StatusOk
+1680060545.409779000 [minimaltd.O] _generateAndSendUserAuthenticator! after block  StatusOk
+1680060545.409947000 [minimaltd.O] unixSocketAdd: Added   fd=14  type=FdInfoIPCEndpoint  path=/services/directoryService/directoryService
+1680060545.417474000 [minimaltd.O] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusOk
+1680060545.417532000 [minimaltd.O] remoteEventIpc: before _createConnection StatusOk
+1680060545.417574000 [minimaltd.O] _createConnection: /services/resh/resh  me@u.client.minimaltd.ethos
+1680060545.417805000 [minimaltd.O] minimaltConnectionCreateAuthenticatedCall
+1680060545.417998000 [minimaltd.O] _generateAndSendUserAuthenticator! before block 10046720422954853847
+1680060545.418787000 [minimaltd.O] rpcMinimaltIpcWriteReply:
+1680060545.432890000 [minimaltd.O] rpcMinimaltIpcWrite:
+1680060545.488573000 [minimaltd.O] rpcMinimaltConnectionCreateReply! 10046720422954853847  StatusOk
+1680060545.488685000 [minimaltd.O] _generateAndSendUserAuthenticator! after block  StatusOk
+1680060545.488858000 [minimaltd.O] unixSocketAdd: Added   fd=16  type=FdInfoIPCEndpoint  path=/services/resh/resh
+1680060546.389188000 [minimaltd.O] rpcMinimaltIpcWrite:
+1680060552.092087000 [minimaltd.O] rpcMinimaltIpcWriteReply:
+1680060552.294369000 [minimaltd.O] rpcMinimaltIpcWrite:
+1680060562.131989000 [minimaltd.O] rpcMinimaltIpcWriteReply:
+1680060562.142140000 [minimaltd.O] rpcMinimaltIpcWrite:
+1680060622.195934000 [minimaltd.O] rpcMinimaltIpcWriteReply:
+1680060622.213884000 [minimaltd.O] rpcMinimaltIpcWrite:
+1680060545.208178000 [directoryCache.O] starts ...
+1680060545.208718000 [directoryCache.O] initialize: HostName 'client.minimaltd.ethos'    DirectoryServiceHostName 'client.ethos'   HostIpPort '10.0.2.15:11121'
+1680060545.208879000 [directoryCache.O] DirectoryCertificate
+1680060545.209016000 [directoryCache.O]    Size: 355   Version: 0   ValidFrom: [1680060503.234830000]   ValidTo: [1711596503.234830000]
+1680060545.209114000 [directoryCache.O]    TypeHash:                 ca47cabb...c8a40a4b
+1680060545.209203000 [directoryCache.O]    SignaturePublicKey:       797518f4...035898f4
+1680060545.209532000 [directoryCache.O]    Signature:                796eabb1...05d4619d
+1680060545.209979000 [directoryCache.O]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1680060545.210060000 [directoryCache.O]    DomainServed:             ethos
+1680060545.210147000 [directoryCache.O]    SigningPublicKey:         33e578fa...d7344250
+1680060545.210342000 [directoryCache.O]    EncryptingPublicKey:      6ab25de5...3f30c710
+1680060545.214200000 [directoryCache.O] Ephemeral host certificate initialized ...
+1680060545.214477000 [directoryCache.O] EphemeralHostCertificate
+1680060545.214825000 [directoryCache.O]    Size: 404   Version: 0   ValidFrom: [1680060545.210546000]   ValidTo: [1711596545.210546000]
+1680060545.215235000 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060545.215916000 [directoryCache.O]    SignaturePublicKey:       797518f4...035898f4
+1680060545.216216000 [directoryCache.O]    Signature:                49d9e0e8...43ed96f6
+1680060545.216871000 [directoryCache.O]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1680060545.216917000 [directoryCache.O]    LongTermEncryptingPublicKey:   eca304a2...8ac91d64
+1680060545.216964000 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060562.125916000]  PublicKey=81095f6c...7dbbb358
+1680060545.218183000 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060622.125916000]  PublicKey=5829d3c9...49909621
+1680060545.345702000 [directoryCache.O] asyncLoop: connected to kernel/directoryCache
+1680060545.345843000 [directoryCache.O] permissions for directoryService
+1680060545.345898000 [directoryCache.O]          [C]              ExecutableLabel: *    Group: *
+1680060545.346136000 [directoryCache.O]          [R]              ExecutableLabel: *    Group: *
+1680060545.346182000 [directoryCache.O]          [W]              ExecutableLabel: *    Group: *
+1680060545.346227000 [directoryCache.O]          [X]              ExecutableLabel: *    Group: *
+1680060545.346274000 [directoryCache.O]          [DC]             ExecutableLabel: *    Group: *
+1680060545.346318000 [directoryCache.O]          [DR]             ExecutableLabel: *    Group: *
+1680060545.346531000 [directoryCache.O]          [OutgoingHost]   ExecutableLabel: *    Group: allHosts
+1680060545.346540000 [directoryCache.O]          [OutgoingUser]   ExecutableLabel: *    Group: *
+1680060545.347132000 [directoryCache.O]          [IncomingUser]   ExecutableLabel: *    Group: universal
+1680060545.348305000 [directoryCache.O] asyncLoop: created directoryService group
+1680060545.410096000 [directoryCache.O] asyncLoop: DirectoryServiceHostName=client.ethos  directoryServiceFd=4
+1680060545.410222000 [directoryCache.O] asyncLoop: just before event loop
+1680060545.411328000 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060545.411478000 [directoryCache.O] DirectoryCacheGetHost: hostName=client.ethos  groupName=allHosts
+1680060545.411562000 [directoryCache.O] group: groupName=allHosts  isHostGroup=true
+1680060545.412136000 [directoryCache.O] initGroup: Adding key for  client.minimaltd.ethos
+1680060545.412207000 [directoryCache.O] initGroup: Adding key for  client.ethos
+1680060545.412311000 [directoryCache.O] initGroup: Adding key for  ethos
+1680060545.412728000 [directoryCache.O] g.hostGroupFetch:  allHosts@j.client.minimaltd.ethos
+1680060545.412844000 [directoryCache.O] g.hostGroupFetch: hostGroupCertificateFind  StatusOk
+1680060545.412953000 [directoryCache.O] hostGroupCertificateProcess: allHosts@j.client.minimaltd.ethos
+1680060545.413009000 [directoryCache.O] hostGroupCertificateProcess: done
+1680060545.413064000 [directoryCache.O] hostGroupFetch allHosts@j.client.minimaltd.ethos done with status StatusOk
+1680060545.413192000 [directoryCache.O] EphemeralHostCertificate
+1680060545.413529000 [directoryCache.O]    Size: 394   Version: 0   ValidFrom: [1680060523.859992000]   ValidTo: [1711596523.859992000]
+1680060545.413576000 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060545.413657000 [directoryCache.O]    SignaturePublicKey:       33e578fa...d7344250
+1680060545.413730000 [directoryCache.O]    Signature:                8698fe29...890aa446
+1680060545.413831000 [directoryCache.O]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1680060545.413883000 [directoryCache.O]    LongTermEncryptingPublicKey:   6ab25de5...3f30c710
+1680060545.414148000 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060560.574850000]  PublicKey=4cf0d8ce...3d37c030
+1680060545.414198000 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060620.574850000]  PublicKey=7fafc4d6...7868777e
+1680060545.417209000 [directoryCache.O] EphemeralHostCertificateWrite: status = StatusOk client.ethos
+1680060545.417269000 [directoryCache.O] DirectoryCacheGetHost:  client.ethos StatusOk
+1680060545.433064000 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060545.433132000 [directoryCache.O] DirectoryServiceUploadEphemeralHostCertificateReply: status=StatusOk
+1680060562.127695000 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060562.129161000 [directoryCache.O] Signing and writing my ephemeral host certificate client.minimaltd.ethos 10.0.2.15:11121
+1680060562.129909000 [directoryCache.O] EphemeralHostCertificate
+1680060562.129973000 [directoryCache.O]    Size: 404   Version: 0   ValidFrom: [1680060562.129230000]   ValidTo: [1711596562.129230000]
+1680060562.130025000 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060562.130280000 [directoryCache.O]    SignaturePublicKey:       797518f4...035898f4
+1680060562.130331000 [directoryCache.O]    Signature:                7d26f91b...3fbb0f1d
+1680060562.130426000 [directoryCache.O]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1680060562.130474000 [directoryCache.O]    LongTermEncryptingPublicKey:   eca304a2...8ac91d64
+1680060562.130801000 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060622.125916000]  PublicKey=5829d3c9...49909621
+1680060562.130876000 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060682.125916000]  PublicKey=9929231c...7c5e5126
+1680060562.142307000 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060562.142390000 [directoryCache.O] DirectoryServiceUploadEphemeralHostCertificateReply: status=StatusOk
+1680060622.186020000 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060622.188509000 [directoryCache.O] Signing and writing my ephemeral host certificate client.minimaltd.ethos 10.0.2.15:11121
+1680060622.190861000 [directoryCache.O] EphemeralHostCertificate
+1680060622.191015000 [directoryCache.O]    Size: 404   Version: 0   ValidFrom: [1680060622.188766000]   ValidTo: [1711596622.188766000]
+1680060622.191131000 [directoryCache.O]    TypeHash:                 9d7d7872...0277dd07
+1680060622.191629000 [directoryCache.O]    SignaturePublicKey:       797518f4...035898f4
+1680060622.191892000 [directoryCache.O]    Signature:                3b968040...8a51ad60
+1680060622.192207000 [directoryCache.O]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1680060622.192445000 [directoryCache.O]    LongTermEncryptingPublicKey:   eca304a2...8ac91d64
+1680060622.193090000 [directoryCache.O]    EphemeralKeyAndExpiration[0]:  Expiration=[1680060682.125916000]  PublicKey=9929231c...7c5e5126
+1680060622.193150000 [directoryCache.O]    EphemeralKeyAndExpiration[1]:  Expiration=[1680060742.125916000]  PublicKey=33595db7...769e260c
+1680060622.214115000 [directoryCache.O] asyncLoop: completed: 1 pending: 2
+1680060622.214194000 [directoryCache.O] DirectoryServiceUploadEphemeralHostCertificateReply: status=StatusOk
+1680060542.180360000 [et.O] Attempting to connect to  client.ethos
+1680060542.180589000 [et.O] ConnectToUnixSocket: error in Connect to path minimaltdfs/services/minimaltdService/minimaltdService no such file or directory
+1680060542.181316000 [et.O] Recvmsg: bad file descriptor
+1680060543.188832000 [et.O] ConnectToUnixSocket: error in Connect to path minimaltdfs/services/minimaltdService/minimaltdService no such file or directory
+1680060543.189016000 [et.O] Recvmsg: bad file descriptor
+1680060545.489336000 [et.O] before event loop
+1680060546.389385000 [et.O] event completed
+1680060552.089097000 [et.O] event completed
+1680060552.294606000 [et.O] event completed
+
